@@ -1,16 +1,20 @@
 import '../styles/globals.css'
 import React from 'react';
 import Layout from '../components/layout';
+import { ThemeProvider } from 'next-themes';
+import { useTheme } from 'next-themes';
 import Home from '.';
 
 function MyApp({ Component, pageProps }) {
-  const [darkMode, setDarkMode] = React.useState(false);
+  const {theme, setTheme} = useTheme();
   return (
-    <div className="min-h-screen dark:bg-gray-900">
-      <Layout darkMode={darkMode} setDarkMode={setDarkMode}>
-        <Component darkMode={darkMode} setDarkMode={setDarkMode} {...pageProps} />
-      </Layout>
-    </div>
+    <ThemeProvider defaultTheme="light">
+      <div className="min-h-screen dark:bg-gray-900">
+        <Layout theme={theme} setTheme={setTheme}>
+          <Component theme={theme} setTheme={setTheme} {...pageProps} />
+        </Layout>
+      </div>
+    </ThemeProvider>
   )
 }
 
