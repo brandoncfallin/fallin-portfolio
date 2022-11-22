@@ -19,9 +19,9 @@ export default function Home({ darkMode, setDarkMode }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
-        <section className="min-h-screen">
+        <section className="h-screen">
           <div className="pt-6 text-center">
-            <h1 className="pb-6 text-5xl font-inter font-extrabold leading-9 tracking-tight text-gray-900 dark:text-slate-50 sm:text-5xl sm:leading-10 md:text-6xl md:leading-14">
+            <h1 className="pb-6 text-4xl font-inter font-extrabold leading-9 tracking-tight text-gray-900 dark:text-slate-50 sm:text-5xl sm:leading-10 md:text-6xl md:leading-14">
               Hi👋, I'm
               <span class="font-inter text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"> Brandon</span>
               .
