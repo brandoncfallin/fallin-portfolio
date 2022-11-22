@@ -27,7 +27,6 @@ export default function Home({ darkMode, setDarkMode }) {
               .
             </h1>
             <h2 className="mb-16 lg:px-20 md:px-10 sm:px-5 text-lg prose max-w-screen-2xl dark:text-slate-50">I'm currently an Aerospace Engineering PhD student at the University of Florida. My research focuses on differential privacy and its applications to control systems.</h2>
-
           </div>
         </section>
       </main>

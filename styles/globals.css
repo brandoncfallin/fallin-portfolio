@@ -19,9 +19,3 @@ a {
 * {
   box-sizing: border-box;
 }
-
-@layer base {
-  :root {
-   @apply dark:bg-gray-900 dark:text-slate-50;
-  }
- }
