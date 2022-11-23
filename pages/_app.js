@@ -8,7 +8,7 @@ import Home from '.';
 function MyApp({ Component, pageProps }) {
   const {theme, setTheme} = useTheme();
   return (
-    <ThemeProvider defaultTheme="light">
+    <ThemeProvider defaultTheme="dark">
       <div className="min-h-screen dark:bg-gray-900">
         <Layout theme={theme} setTheme={setTheme}>
           <Component theme={theme} setTheme={setTheme} {...pageProps} />
