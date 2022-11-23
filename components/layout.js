@@ -5,7 +5,7 @@ import { Main } from 'next/document'
 export default function Layout({ children,darkMode,setDarkMode }) {
   return (
     <>
-      <MainNav darkMode={darkMode} setDarkMode={setDarkMode} />
+      <MainNav darkMode={darkMode} setDarkMode={setDarkMode}/>
       <main>{children}</main>
       <MainFooter darkMode={darkMode} setDarkMode={setDarkMode} />
     </>
