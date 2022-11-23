@@ -12,7 +12,7 @@ function MainNav() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <div className={theme == "dark" ? "dark" : ""}>
-      <nav className="flex flex-wrap items-center justify-between px-2 py-3 dark:bg-gray-900 bg-slate-100 text-black">
+      <nav className="flex flex-wrap items-center justify-between px-2 py-3 dark:bg-gray-800 bg-slate-100 text-black">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link
@@ -23,9 +23,9 @@ function MainNav() {
             </Link>
 
             <ul className="text-4xl flex items-center dark:text-slate-50 py-1 space-x-4">
-              {theme == "dark" ? <BsSunFill onClick={() => {setTheme(theme == "dark" ? "light" : "dark")}} className="p-1 cursor-pointer leading-none border-2 border-solid border-transparent hover:bg-gray-800 rounded bg-transparent lg:hidden block" /> : <BsFillMoonFill onClick={() => {setTheme(theme == "dark" ? "light" : "dark")}} className="p-1 cursor-pointer leading-none border-2 border-solid border-transparent rounded bg-transparent lg:hidden block" />}
+              {theme == "dark" ? <BsSunFill onClick={() => {setTheme(theme == "dark" ? "light" : "dark")}} className="p-1 cursor-pointer leading-none border-2 border-solid border-transparent hover:bg-gray-700 rounded bg-transparent lg:hidden block" /> : <BsFillMoonFill onClick={() => {setTheme(theme == "dark" ? "light" : "dark")}} className="p-1 cursor-pointer leading-none border-2 border-solid border-transparent rounded bg-transparent lg:hidden block" />}
 
-              {navbarOpen ? <AiOutlineClose onClick={() => setNavbarOpen(!navbarOpen)} className="text-4xl p-1 cursor-pointer leading-none border border-solid border-transparent rounded dark:bg-gray-800 light: bg-slate-200 lg:hidden block"/> : <FiMenu onClick={() => setNavbarOpen(!navbarOpen)} className="text-4xl p-1 cursor-pointer leading-none border border-solid border-transparent rounded bg-transparent lg:hidden block" type="button"/> }
+              {navbarOpen ? <AiOutlineClose onClick={() => setNavbarOpen(!navbarOpen)} className="text-4xl p-1 cursor-pointer leading-none border border-solid border-transparent rounded dark:bg-gray-700 light: bg-slate-200 lg:hidden block"/> : <FiMenu onClick={() => setNavbarOpen(!navbarOpen)} className="text-4xl p-1 cursor-pointer leading-none border border-solid border-transparent rounded bg-transparent lg:hidden block" type="button"/> }
 
             </ul>
 
