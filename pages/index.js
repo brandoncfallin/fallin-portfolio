@@ -21,7 +21,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40 text-black">
-        <section className="flex items-center justify-center h-screen">
+        <section className="flex pt-20 md:pt-0 md:items-center justify-center h-screen pb-10">
           <div className="text-center">
             <h1 className="pb-6 text-4xl font-inter font-extrabold leading-9 tracking-tight text-gray-900 dark:text-slate-50 sm:text-5xl sm:leading-10 md:text-6xl md:leading-14">
               Hi👋, I'm
