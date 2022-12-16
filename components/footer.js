@@ -1,18 +1,22 @@
-import React from 'react';
-import { useTheme } from 'next-themes';
-import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
-import { } from 'react-icons/fi'
+import Link from './Link';
+import siteMetadata from '@/data/siteMetadata';
+import SocialIcon from '@/components/social-icons';
 
-
-function MainFooter() {
-    const {theme, setTheme} = useTheme();
-    return (
-        <div className={theme == "dark" ? "dark" : ""}>
-            <div>
-            <h2 className="text-sm flex font-inter font-extralight justify-center lg:px-20 py-5 md:px-10 sm:px-5 text-lg prose max-w-screen-2xl dark:bg-gray-900 dark:text-slate-50 bg-white text-black">© Brandon Fallin 2022</h2>
-            </div>
+export default function Footer() {
+  return (
+    <footer>
+      <div className="mt-16 mt-16 flex flex-col items-center">
+        <div className="mb-3 flex space-x-4">
+          <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size="5" />
+          <SocialIcon kind="github" href={siteMetadata.github} size="5" />
+          <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size="5" />
         </div>
-    );
+        <div className="mb-8 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
+          <div>{`© ${new Date().getFullYear()}`}</div>
+          <div>{` • `}</div>
+          <div>{siteMetadata.author}</div>
+        </div>
+      </div>
+    </footer>
+  );
 }
-
-export default MainFooter;
