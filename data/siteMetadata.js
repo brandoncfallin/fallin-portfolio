@@ -1,5 +1,5 @@
 const siteMetadata = {
-  title: 'Brandon Fallin - Portfolio',
+  title: 'Home - Brandon Fallin',
   author: 'Brandon Fallin',
   headerTitle: 'Brandon Fallin',
   description: 'Portfolio of a UF engineering grad student.',
