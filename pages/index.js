@@ -125,11 +125,11 @@ export default function Home({ posts }) {
                   target="_blank"
                 >
                   <Image
-                    src="/static/images/workxp/uflogo.png"
+                    src="/static/images/workxp/uf-logo.png"
                     alt="UF"
                     width="50px"
                     height="50px"
-                    className="rounded-md bg-orange-500/80"
+                    className="rounded-md bg-blue-500 hover:bg-blue-500/80"
                   />
                 </a>
                 <div className="flex min-w-0 flex-col justify-center">
@@ -162,11 +162,11 @@ export default function Home({ posts }) {
                   target="_blank"
                 >
                   <Image
-                    src="/static/images/workxp/uflogo.png"
+                    src="/static/images/workxp/orbit-logo.png"
                     alt="Orbit"
                     width="50px"
                     height="50px"
-                    className="rounded-md bg-purple-500/80"
+                    className="rounded-md bg-purple-500 hover:bg-purple-500/80"
                   />
                 </a>
                 <div className="flex min-w-0 flex-col justify-center">
@@ -199,11 +199,11 @@ export default function Home({ posts }) {
                   target="_blank"
                 >
                   <Image
-                    src="/static/images/workxp/uflogo.png"
+                    src="/static/images/workxp/pdi-logo.png"
                     alt="PDI"
                     width="50px"
                     height="50px"
-                    className="rounded-md bg-red-500/80"
+                    className="rounded-md bg-red-500 hover:bg-red-500/80"
                   />
                 </a>
                 <div className="flex min-w-0 flex-col justify-center">
